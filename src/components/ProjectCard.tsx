@@ -1,21 +1,27 @@
-type Props = {
-  imageSrc: string;
-  title: string;
-  pillText: string;
-  description: string;
-  footer: string;
-};
+import { Project } from "./projects";
+import { Link } from "react-router-dom";
 
-export default function ProjectCard({ imageSrc, title, pillText, description, footer }: Props) {
+export default function ProjectCard({ imageSrc, title, pillText, description, year }: Project) {
+  const urlFriendlyTitle = title.toLowerCase().replace(/\s+/g, "-");
+
   return (
-    <div className="w-86 h-100 flex flex-col gap-3">
+    <Link
+      to={`/${urlFriendlyTitle}`}
+      className="w-92 h-100 mb-4 flex flex-col gap-3 transition-transform duration-300 
+    hover:shadow-lg hover:scale-105 hover:bg-gray-100 hover:rounded-xl p-4"
+    >
       <img src={imageSrc} className="rounded-xl"></img>
-      <div className="flex gap-2">
+      <div className="flex items-center gap-2">
         <div className="text-2xl font-bold">{title}</div>
-        <div className="border-2 border-blue-500 text-blue-500 rounded-full py-0.5 px-4">{pillText}</div>
+        <div
+          className="h-6 flex items-center justify-center border border-blue-500 text-blue-500
+         text-xs font-medium rounded-full px-3"
+        >
+          {pillText}
+        </div>
       </div>
       <div>{description}</div>
-      <div className="font-bold">{footer}</div>
-    </div>
+      <div className="font-bold">{year}</div>
+    </Link>
   );
 }

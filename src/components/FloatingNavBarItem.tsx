@@ -11,8 +11,10 @@ export default function FloatingNavBarItem({ text, href, onClick }: Props) {
     transition-all duration-300 py-2 px-4 rounded-lg"
       href={href}
       onClick={onClick}
+      rel="noreferrer"
+      target="_blank"
     >
-      <div className="w-8 h-8 bg-black rounded-xl" />
+      <div className="w-8 h-8 bg-black rounded-full" />
       <div className="text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">{text}</div>
     </a>
   );
