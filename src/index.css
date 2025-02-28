@@ -5,4 +5,10 @@
 @theme {
   --font-inter: Inter, sans-serif;
   --font-instrument: "Instrument Serif", serif;
+
+  --color-tropical-indigo: #9e92fb;
+  --color-gold: #ffd639;
+  --color-smoky-black: #110903;
+  --color-rose-red: #ba274a;
+  --color-asparagus: #6ba368;
 }
