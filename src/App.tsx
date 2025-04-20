@@ -10,8 +10,8 @@ import ScrollToTop from "./components/ScrollToTop";
 import FloatingNavBar from "./components/FloatingNavBar";
 
 export default function App() {
-  const [isFloatingNavVisible, setIsFloatingNavVisible] = useState(false);
   const [isPhone, setIsPhone] = useState(false);
+  const [isFloatingNavVisible, setIsFloatingNavVisible] = useState(false);
 
   useEffect(() => {
     if (window.sessionStorage.getItem("scrollToProjects") === "true") {

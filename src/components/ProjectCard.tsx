@@ -25,11 +25,7 @@ export default function ProjectCard({ image, frontPageVideo, title, pillText, de
       }}
     >
       <div>
-        {isHovered ? (
-          <video src={frontPageVideo} autoPlay loop muted playsInline className="rounded-xl" />
-        ) : (
-          <img src={image} alt={title} className="rounded-xl" />
-        )}
+        <img src={isHovered ? frontPageVideo : image} alt={title} className="rounded-xl" />
         <div className="flex items-center mt-2">
           <div className="px-2 text-xl font-bold">{title}</div>
           <div className="h-6 flex items-center justify-center bg-white/80 border border-blue-500 text-blue-500 text-xs font-medium rounded-full px-3">

@@ -4,12 +4,11 @@ type Props = {
   icon: string;
   text: string;
   href: string;
+  isExternal?: boolean;
   onClick?: (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void;
 };
 
-export default function FloatingNavBarItem({ icon, text, href, onClick }: Props) {
-  const isExternal = href.startsWith("http");
-
+export default function FloatingNavBarItem({ icon, text, href, isExternal, onClick }: Props) {
   return isExternal ? (
     <a
       className="relative flex justify-between gap-5 items-center group hover:bg-white hover:shadow-lg 

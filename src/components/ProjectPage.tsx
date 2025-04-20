@@ -43,7 +43,7 @@ export default function ProjectPage() {
 
       {/* Full page gif */}
       <div className="flex flex-col">
-        <video src={fullPageVideo} autoPlay loop muted playsInline className="w-full h-auto rounded-xl" />{" "}
+        <img src={fullPageVideo} className="w-full h-auto" />
         <div className="self-end mt-2">A full-page walkthrough showcasing website navigation and features</div>
       </div>
 

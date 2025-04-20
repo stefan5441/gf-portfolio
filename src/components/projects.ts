@@ -13,22 +13,22 @@ import gbaImg from "../assets/images/gbaImg.png";
 import branditImg from "../assets/images/branditImg.png";
 import magnoliaImg from "../assets/images/magnoliaImg.png";
 
-import sundayFront from "../assets/videos/sunday-frontpage.mov";
-import sundayFull from "../assets/videos/sunday-full.mov";
+import sundayFront from "../assets/videos/sunday-front.gif";
+import sundayFull from "../assets/videos/sunday-full.gif";
 import sundayMobile from "../assets/mobile/sunday.png";
-import mebelDizajnFront from "../assets/videos/mebeldizajn-front.mov";
-import mebelDizajnFull from "../assets/videos/mebeldizajn-full.mov";
+import mebelDizajnFront from "../assets/videos/mebeldizajn-front.gif";
+import mebelDizajnFull from "../assets/videos/mebeldizajn-full.gif";
 import mebelDizajnMobile from "../assets/mobile/mebeldizajn.png";
-import klerFront from "../assets/videos/kler-front.mov";
-import klerFull from "../assets/videos/kler-full.mov";
+import klerFront from "../assets/videos/kler-front.gif";
+import klerFull from "../assets/videos/kler-full.gif";
 import klerMobile from "../assets/mobile/kler.png";
-import gbaFront from "../assets/videos/gba-front.mov";
-import gbaFull from "../assets/videos/gba-full.mov";
+import gbaFront from "../assets/videos/gba-front.gif";
+import gbaFull from "../assets/videos/gba-full.gif";
 import gbaMobile from "../assets/mobile/gba.png";
-import branditFront from "../assets/videos/brandit-front.mov";
+import branditFront from "../assets/videos/brandit.gif";
 import branditMobile from "../assets/mobile/brandit.png";
-import magnoliaFront from "../assets/videos/magnolia-front.mov";
-import magnoliaFull from "../assets/videos/magnolia-full.mov";
+import magnoliaFront from "../assets/videos/magnolia-front.gif";
+import magnoliaFull from "../assets/videos/magnolia-full.gif";
 import magnoliaMobile from "../assets/mobile/magnolia.png";
 
 // Types

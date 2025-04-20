@@ -16,7 +16,7 @@ export default function FloatingNavBar({ visible }: { visible: boolean }) {
       }`}
     >
       <FloatingNavBarItem icon={projectsIcon} text="Projects" href="#projects" onClick={(e) => scrollToProjects(e)} />
-      <FloatingNavBarItem icon={resumeIcon} text="Resume" href={resumePDF} />
+      <FloatingNavBarItem icon={resumeIcon} text="Resume" href={resumePDF} isExternal />
       <FloatingNavBarItem icon={hiremeIcon} text="Hire me" href="mailto:sara_kochovska@yahoo.com" />
     </div>
   );
