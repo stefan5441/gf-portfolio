@@ -3,8 +3,8 @@ import mailIcon from "../assets/mailIcon.svg";
 
 export default function Footer({ isPhone }: { isPhone: boolean }) {
   return (
-    <div className="bg-black h-28 flex items-center mt-16">
-      <div className="container mx-14 lg:mx-24 text-white flex justify-end md:justify-between items-center">
+    <div className="bg-black h-28 flex items-center justify-center mt-16">
+      <div className="container max-w-5xl mx-14 lg:mx-24 text-white flex justify-end md:justify-between items-center">
         {!isPhone && <div>© 2025 · Made without 🥛 because I'm allergic</div>}
         <div className="flex gap-4">
           <a href="https://www.linkedin.com/in/sarakochovska/" rel="noreferrer" target="_blank">

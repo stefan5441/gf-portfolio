@@ -25,7 +25,7 @@ export default function App() {
   useEffect(() => {
     const handleScroll = () => {
       const navBarHeight = document.querySelector("nav")?.offsetHeight || 0;
-      if (window.scrollY > navBarHeight) {
+      if (window.scrollY > navBarHeight && !isPhone) {
         setIsFloatingNavVisible(true);
       } else {
         setIsFloatingNavVisible(false);
@@ -36,11 +36,11 @@ export default function App() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [isPhone]);
 
   useEffect(() => {
     const checkScreenSize = () => {
-      setIsPhone(window.innerWidth <= 640);
+      setIsPhone(window.innerWidth <= 1024);
     };
 
     checkScreenSize();
@@ -63,7 +63,7 @@ export default function App() {
                 <Heading />
                 <Projects />
               </div>
-              {!isPhone && <FloatingNavBar visible={isFloatingNavVisible} />}
+              <FloatingNavBar visible={isFloatingNavVisible} />
               <Footer isPhone={isPhone} />
             </>
           }
@@ -76,7 +76,7 @@ export default function App() {
                 <NavBar />
                 <ProjectPage />
               </div>
-              {!isPhone && <FloatingNavBar visible={isFloatingNavVisible} />}
+              <FloatingNavBar visible={isFloatingNavVisible} />
               <Footer isPhone={isPhone} />
             </>
           }
