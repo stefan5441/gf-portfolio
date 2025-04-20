@@ -14,7 +14,7 @@ export default function ProjectPage() {
     return <div className="container mx-auto max-w-3xl py-10">Project not found</div>;
   }
 
-  const { title, showTitle, year, myRole, url, shortUrl, logo, fullPageGif, description, done, needs, mobileImage } =
+  const { title, showTitle, year, myRole, url, shortUrl, logo, fullPageVideo, description, done, needs, mobileImage } =
     project;
 
   return (
@@ -43,7 +43,7 @@ export default function ProjectPage() {
 
       {/* Full page gif */}
       <div className="flex flex-col">
-        <img src={fullPageGif} className="w-full h-auto" />
+        <video src={fullPageVideo} autoPlay loop muted playsInline className="w-full h-auto rounded-xl" />{" "}
         <div className="self-end mt-2">A full-page walkthrough showcasing website navigation and features</div>
       </div>
 
