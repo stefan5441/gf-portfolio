@@ -1,4 +1,4 @@
-import { scrollToProjects } from "./utils";
+import { useScrollToProjects } from "./utils";
 
 import projectsIcon from "../assets/icons/projects.svg";
 import resumeIcon from "../assets/icons/resume.svg";
@@ -6,6 +6,8 @@ import resumePDF from "../assets/sarakochovska-resume.pdf";
 import hiremeIcon from "../assets/icons/hireme.svg";
 
 export default function NormalNavbarOptions() {
+  const scrollToProjects = useScrollToProjects();
+
   return (
     <div className="flex gap-12">
       <a

@@ -1,4 +1,4 @@
-import { scrollToProjects } from "./utils";
+import { useScrollToProjects } from "./utils";
 import FloatingNavBarItem from "./FloatingNavBarItem";
 
 import projectsIcon from "../assets/icons/projects.svg";
@@ -7,6 +7,8 @@ import resumePDF from "../assets/sarakochovska-resume.pdf";
 import hiremeIcon from "../assets/icons/hireme.svg";
 
 export default function FloatingNavBar({ visible }: { visible: boolean }) {
+  const scrollToProjects = useScrollToProjects();
+
   return (
     <div
       className={`fixed ml-10 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-8 text-center transition-opacity duration-300 ${

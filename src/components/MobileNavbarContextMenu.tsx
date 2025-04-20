@@ -2,13 +2,15 @@ import { useEffect } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 
 import resumePDF from "../assets/sarakochovska-resume.pdf";
-import { scrollToProjects } from "./utils";
+import { useScrollToProjects } from "./utils";
 
 type Props = {
   setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
 export default function MobileNavbarContextMenu({ setIsMenuOpen }: Props) {
+  const scrollToProjects = useScrollToProjects();
+
   useEffect(() => {
     document.body.style.overflow = "hidden";
 
