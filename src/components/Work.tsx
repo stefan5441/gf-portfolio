@@ -1,17 +1,16 @@
 import { projects } from "./projects";
 import ProjectCard from "./ProjectCard";
 
-export default function Work() {
+export default function Projects() {
   return (
-    <>
-      <div className="mt-28 text-2xl" id="work">
-        Work
-      </div>
-      <div className="mt-5 flex flex-wrap justify-between">
+    <div className="mt-20 px-4" id="projects">
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 justify-items-center">
         {projects.map((project, index) => (
-          <ProjectCard key={index} {...project} />
+          <div key={index}>
+            <ProjectCard {...project} />
+          </div>
         ))}
       </div>
-    </>
+    </div>
   );
 }

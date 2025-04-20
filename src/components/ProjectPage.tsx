@@ -14,53 +14,67 @@ export default function ProjectPage() {
     return <div className="container mx-auto max-w-3xl py-10">Project not found</div>;
   }
 
-  const { title, year } = project;
+  const { title, showTitle, year, myRole, url, shortUrl, logo, fullPageGif, description, done, needs, mobileImage } =
+    project;
 
   return (
-    <div className="mt-28 mb-28 flex flex-col gap-16">
+    <div className="mt-24 mb-28 flex flex-col gap-16">
       {/* Company title */}
       <div className="flex items-end gap-6">
-        <div className="h-32 w-32 bg-black"></div>
-        <div className="text-8xl">{title}</div>
+        <img src={logo} className="h-20 w-auto" />
+        {showTitle && <div className="text-5xl">{title}</div>}
       </div>
 
       {/* The thing with lines */}
       <div className="flex flex-col gap-6">
         <LineThing leftSideText="Year" rightSideText={year} />
-        <LineThing leftSideText="My role" rightSideText={year} />
-        <LineThing leftSideText="Team" rightSideText={year} />
-        <LineThing leftSideText="See live" rightSideText={year} />
+        <LineThing leftSideText="My role" rightSideText={myRole} />
+        <LineThing leftSideText="See live" rightSideText={shortUrl} href={url} />
       </div>
 
-      <div className="flex flex-col gap-4">
-        <div className="text-4xl">What's been done</div>
-        <div>
-          Created a foundational design system, designed an app for iOS and Android, created a few illustrations,
-          designed the website and various marketing materials.
-        </div>
+      {/* Description */}
+      <div>
+        {description.map((paragraph, idx) => (
+          <p key={idx} className="mb-4 text-xl text-justify">
+            {paragraph}
+          </p>
+        ))}
       </div>
 
+      {/* Full page gif */}
+      <div className="flex flex-col">
+        <img src={fullPageGif} className="w-full h-auto" />
+        <div className="self-end mt-2">A full-page walkthrough showcasing website navigation and features</div>
+      </div>
+
+      {/* Needs */}
       <div className="flex flex-col gap-4">
         <div className="text-4xl">Needs</div>
-        <div>
-          Sunday is a startup that I joined as designer at an early stage and designed everything from the ground up.
-          The idea of the product is to digitilize word of mouth and bring recommendations of professionals in different
-          fields that you'd ask for physically to an app.
-        </div>
+        <ul className="list-disc list-inside space-y-2 text-xl">
+          {needs.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
       </div>
 
-      <div className="flex flex-col">
-        <div className="bg-black w-full h-92"></div>
-        <div className="self-end">Some sentence to go bottom right of the image</div>
-      </div>
-
+      {/* Mobile  */}
       <div>
-        Sunday is a startup that I joined as a designer at an early stage, where I had the opportunity to build
-        everything from the ground up. The core idea behind the product is to digitize word-of-mouth recommendations,
-        making it easier for people to find trusted professionals in various fields. Instead of relying on in-person
-        conversations or scattered online reviews, the app centralizes personal recommendations, allowing users to
-        access reliable suggestions from their network. From branding to user experience, I designed the entire platform
-        to ensure a seamless and intuitive experience that encourages engagement and trust.
+        <img src={mobileImage} className="m-auto w-auto h-150" />
+      </div>
+
+      {/* What's been done */}
+      <div className="flex flex-col gap-4">
+        <div className="text-4xl">What's been done</div>
+        <ul className="list-decimal list-inside space-y-2 text-xl">
+          {done.map((item, idx) => {
+            const [left, right] = item.split("–");
+            return (
+              <li key={idx}>
+                <span>{left.trim()}</span> – {right.trim()}
+              </li>
+            );
+          })}
+        </ul>
       </div>
     </div>
   );

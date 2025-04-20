@@ -1,10 +1,11 @@
 type Props = {
+  icon: string;
   text: string;
   href: string;
   onClick?: (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void;
 };
 
-export default function FloatingNavBarItem({ text, href, onClick }: Props) {
+export default function FloatingNavBarItem({ icon, text, href, onClick }: Props) {
   return (
     <a
       className="relative flex justify-between gap-5 items-center group hover:bg-white hover:shadow-lg 
@@ -14,8 +15,8 @@ export default function FloatingNavBarItem({ text, href, onClick }: Props) {
       rel="noreferrer"
       target="_blank"
     >
-      <div className="w-8 h-8 bg-black rounded-full" />
-      <div className="text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">{text}</div>
+      <img src={icon} alt="icon" className="w-auto h-8" />
+      <div className="text-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">{text}</div>
     </a>
   );
 }

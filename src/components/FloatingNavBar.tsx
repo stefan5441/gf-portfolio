@@ -1,12 +1,21 @@
+import { scrollToProjects } from "./utils";
 import FloatingNavBarItem from "./FloatingNavBarItem";
-import { scrollToWork } from "./utils";
 
-export default function FloatingNavBar() {
+import projectsIcon from "../assets/icons/projects.svg";
+import resumeIcon from "../assets/icons/resume.svg";
+import resumePDF from "../assets/sarakochovska-resume.pdf";
+import hiremeIcon from "../assets/icons/hireme.svg";
+
+export default function FloatingNavBar({ visible }: { visible: boolean }) {
   return (
-    <div className="fixed ml-24 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-8 text-center">
-      <FloatingNavBarItem text="Work" href="#work" onClick={(e) => scrollToWork(e)} />
-      <FloatingNavBarItem text="Resume" href="/" />
-      <FloatingNavBarItem text="Hire me" href="mailto:sara_kochovska@yahoo.com" />
+    <div
+      className={`fixed ml-10 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-8 text-center transition-opacity duration-300 ${
+        visible ? "opacity-100" : "opacity-0 pointer-events-none"
+      }`}
+    >
+      <FloatingNavBarItem icon={projectsIcon} text="Projects" href="#projects" onClick={(e) => scrollToProjects(e)} />
+      <FloatingNavBarItem icon={resumeIcon} text="Resume" href={resumePDF} />
+      <FloatingNavBarItem icon={hiremeIcon} text="Hire me" href="mailto:sara_kochovska@yahoo.com" />
     </div>
   );
 }
