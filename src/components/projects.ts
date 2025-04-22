@@ -1,35 +1,42 @@
-// Assets
-import branditLogo from "../assets/logos/brandit-logo.svg";
-import gbaLogo from "../assets/logos/gba.png";
-import klerLogo from "../assets/logos/kler-logo.svg";
-import magnoliaLogo from "../assets/logos/magnolia-logo.png";
-import mebeldizajnLogo from "../assets/logos/mebeldizajn-logo.svg";
-import sundayLogo from "../assets/logos/sunday-logo.svg";
+// Logos
+import gbaLogo from "../assets/projects/logos/gba.png";
+import klerLogo from "../assets/projects/logos/kler.svg";
+import sundayLogo from "../assets/projects/logos/sunday.svg";
+import branditLogo from "../assets/projects/logos/brandit.svg";
+import magnoliaLogo from "../assets/projects/logos/magnolia.png";
+import mebeldizajnLogo from "../assets/projects/logos/mebeldizajn.svg";
 
-import sundayImg from "../assets/images/sundayImg.png";
-import mebelDizajnImg from "../assets/images/mebeldizajnImg.png";
-import klerImg from "../assets/images/klerImg.png";
-import gbaImg from "../assets/images/gbaImg.png";
-import branditImg from "../assets/images/branditImg.png";
-import magnoliaImg from "../assets/images/magnoliaImg.png";
+// Images
+import gbaImg from "../assets/projects/images/gba.png";
+import klerImg from "../assets/projects/images/kler.png";
+import sundayImg from "../assets/projects/images/sunday.png";
+import branditImg from "../assets/projects/images/brandit.png";
+import magnoliaImg from "../assets/projects/images/magnolia.png";
+import mebelDizajnImg from "../assets/projects/images/mebeldizajn.png";
 
-import sundayFront from "../assets/videos/sunday-front.gif";
-import sundayFull from "../assets/videos/sunday-full.gif";
-import sundayMobile from "../assets/mobile/sunday.png";
-import mebelDizajnFront from "../assets/videos/mebeldizajn-front.gif";
-import mebelDizajnFull from "../assets/videos/mebeldizajn-full.gif";
-import mebelDizajnMobile from "../assets/mobile/mebeldizajn.png";
-import klerFront from "../assets/videos/kler-front.gif";
-import klerFull from "../assets/videos/kler-full.gif";
-import klerMobile from "../assets/mobile/kler.png";
-import gbaFront from "../assets/videos/gba-front.gif";
-import gbaFull from "../assets/videos/gba-full.gif";
-import gbaMobile from "../assets/mobile/gba.png";
-import branditFront from "../assets/videos/brandit.gif";
-import branditMobile from "../assets/mobile/brandit.png";
-import magnoliaFront from "../assets/videos/magnolia-front.gif";
-import magnoliaFull from "../assets/videos/magnolia-full.gif";
-import magnoliaMobile from "../assets/mobile/magnolia.png";
+// Front page gifs
+import gbaFrontPage from "../assets/projects/frontpageGifs/gba.gif";
+import klerFrontPage from "../assets/projects/frontpageGifs/kler.gif";
+import sundayFrontPage from "../assets/projects/frontpageGifs/sunday.gif";
+import branditFrontPage from "../assets/projects/frontpageGifs/brandit.gif";
+import magnoliaFrontPage from "../assets/projects/frontpageGifs/magnolia.gif";
+import mebeldizajnFrontPage from "../assets/projects/frontpageGifs/mebeldizajn.gif";
+
+// Full pages gifs
+import gbaFullPage from "../assets/projects/fullpageGifs/gba.gif";
+import klerFullPage from "../assets/projects/fullpageGifs/kler.gif";
+import sundayFullPage from "../assets/projects/fullpageGifs/sunday.gif";
+import branditFullPage from "../assets/projects/fullpageGifs/brandit.gif";
+import magnoliaFullPage from "../assets/projects/fullpageGifs/magnolia.gif";
+import mebeldizajnFullPage from "../assets/projects/fullpageGifs/mebeldizajn.gif";
+
+// Mobile gifs
+import gbaMobile from "../assets/projects/mobileGifs/gba.gif";
+import klerMobile from "../assets/projects/mobileGifs/kler.gif";
+import sundayMobile from "../assets/projects/mobileGifs/sunday.gif";
+import branditMobile from "../assets/projects/mobileGifs/brandit.gif";
+import magnoliaMobile from "../assets/projects/mobileGifs/magnolia.gif";
+import mebeldizajnMobile from "../assets/projects/mobileGifs/mebeldizajn.gif";
 
 // Types
 export type Project = {
@@ -214,8 +221,8 @@ export const projects: Project[] = [
   {
     image: sundayImg,
     showTitle: false,
-    frontPageVideo: sundayFront,
-    fullPageVideo: sundayFull,
+    frontPageVideo: sundayFrontPage,
+    fullPageVideo: sundayFullPage,
     mobileImage: sundayMobile,
     title: "Sunday",
     logo: sundayLogo,
@@ -231,9 +238,9 @@ export const projects: Project[] = [
   {
     image: mebelDizajnImg,
     showTitle: true,
-    frontPageVideo: mebelDizajnFront,
-    fullPageVideo: mebelDizajnFull,
-    mobileImage: mebelDizajnMobile,
+    frontPageVideo: mebeldizajnFrontPage,
+    fullPageVideo: mebeldizajnFullPage,
+    mobileImage: mebeldizajnMobile,
     title: "Mebel Dizajn",
     logo: mebeldizajnLogo,
     myRole: "UX/UI, Web designer",
@@ -248,8 +255,8 @@ export const projects: Project[] = [
   {
     image: klerImg,
     showTitle: false,
-    frontPageVideo: klerFront,
-    fullPageVideo: klerFull,
+    frontPageVideo: klerFrontPage,
+    fullPageVideo: klerFullPage,
     mobileImage: klerMobile,
     title: "Kler",
     logo: klerLogo,
@@ -265,8 +272,8 @@ export const projects: Project[] = [
   {
     image: gbaImg,
     showTitle: true,
-    frontPageVideo: gbaFront,
-    fullPageVideo: gbaFull,
+    frontPageVideo: gbaFrontPage,
+    fullPageVideo: gbaFullPage,
     mobileImage: gbaMobile,
     title: "GBA",
     logo: gbaLogo,
@@ -282,8 +289,8 @@ export const projects: Project[] = [
   {
     image: branditImg,
     showTitle: true,
-    frontPageVideo: branditFront,
-    fullPageVideo: branditFront,
+    frontPageVideo: branditFrontPage,
+    fullPageVideo: branditFullPage,
     mobileImage: branditMobile,
     title: "BrandIt",
     logo: branditLogo,
@@ -299,8 +306,8 @@ export const projects: Project[] = [
   {
     image: magnoliaImg,
     showTitle: true,
-    frontPageVideo: magnoliaFront,
-    fullPageVideo: magnoliaFull,
+    frontPageVideo: magnoliaFrontPage,
+    fullPageVideo: magnoliaFullPage,
     mobileImage: magnoliaMobile,
     title: "Magnolia Glamour",
     logo: magnoliaLogo,

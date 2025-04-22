@@ -1,9 +1,10 @@
 import { useScrollToProjects } from "./utils";
 import FloatingNavBarItem from "./FloatingNavBarItem";
 
+import resume from "../assets/resume.pdf";
+
 import projectsIcon from "../assets/icons/projects.svg";
 import resumeIcon from "../assets/icons/resume.svg";
-import resumePDF from "../assets/sarakochovska-resume.pdf";
 import hiremeIcon from "../assets/icons/hireme.svg";
 
 export default function FloatingNavBar({ visible }: { visible: boolean }) {
@@ -16,7 +17,7 @@ export default function FloatingNavBar({ visible }: { visible: boolean }) {
       }`}
     >
       <FloatingNavBarItem icon={projectsIcon} text="Projects" href="#projects" onClick={(e) => scrollToProjects(e)} />
-      <FloatingNavBarItem icon={resumeIcon} text="Resume" href={resumePDF} isExternal />
+      <FloatingNavBarItem icon={resumeIcon} text="Resume" href={resume} isExternal />
       <FloatingNavBarItem icon={hiremeIcon} text="Hire me" href="mailto:sara_kochovska@yahoo.com" />
     </div>
   );

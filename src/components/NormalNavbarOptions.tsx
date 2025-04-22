@@ -1,8 +1,9 @@
 import { useScrollToProjects } from "./utils";
 
+import resume from "../assets/resume.pdf";
+
 import projectsIcon from "../assets/icons/projects.svg";
 import resumeIcon from "../assets/icons/resume.svg";
-import resumePDF from "../assets/sarakochovska-resume.pdf";
 import hiremeIcon from "../assets/icons/hireme.svg";
 
 export default function NormalNavbarOptions() {
@@ -19,7 +20,7 @@ export default function NormalNavbarOptions() {
         Projects
       </a>
       <a
-        href={resumePDF}
+        href={resume}
         className="text-xl flex gap-2 items-end hover:underline hover:underline-offset-5"
         rel="noreferrer"
         target="_blank"

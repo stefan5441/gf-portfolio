@@ -1,5 +1,5 @@
-import linkedinIcon from "../assets/linkedinIcon.svg";
-import mailIcon from "../assets/mailIcon.svg";
+import linkedinIcon from "../assets/icons/linkedin.svg";
+import mailIcon from "../assets/icons/mail.svg";
 
 export default function Footer({ isPhone }: { isPhone: boolean }) {
   return (

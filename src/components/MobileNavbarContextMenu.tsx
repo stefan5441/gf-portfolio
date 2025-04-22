@@ -1,8 +1,8 @@
 import { useEffect } from "react";
+import { useScrollToProjects } from "./utils";
 import { AiOutlineClose } from "react-icons/ai";
 
-import resumePDF from "../assets/sarakochovska-resume.pdf";
-import { useScrollToProjects } from "./utils";
+import resume from "../assets/resume.pdf";
 
 type Props = {
   setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
@@ -36,7 +36,7 @@ export default function MobileNavbarContextMenu({ setIsMenuOpen }: Props) {
         Projects
       </a>
       <a
-        href={resumePDF}
+        href={resume}
         className="text-2xl hover:underline hover:underline-offset-5"
         rel="noreferrer"
         target="_blank"
