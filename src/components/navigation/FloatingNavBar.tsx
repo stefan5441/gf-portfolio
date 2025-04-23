@@ -3,7 +3,7 @@ import resumeIcon from "../../assets/icons/resume.svg";
 import hiremeIcon from "../../assets/icons/hireme.svg";
 import FloatingNavBarItem from "./FloatingNavBarItem";
 import projectsIcon from "../../assets/icons/projects.svg";
-import { useScrollToProjects } from "../../hooks/useScrollToProjects";
+import useScrollToProjects from "../../hooks/useScrollToProjects";
 
 export default function FloatingNavBar({ visible }: { visible: boolean }) {
   const scrollToProjects = useScrollToProjects();

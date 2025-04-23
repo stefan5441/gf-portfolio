@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-export function useScrollToProjects() {
+export default function useScrollToProjects() {
   const navigate = useNavigate();
 
   return (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {

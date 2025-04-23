@@ -2,7 +2,7 @@ import resume from "../../assets/resume.pdf";
 import resumeIcon from "../../assets/icons/resume.svg";
 import hiremeIcon from "../../assets/icons/hireme.svg";
 import projectsIcon from "../../assets/icons/projects.svg";
-import { useScrollToProjects } from "../../hooks/useScrollToProjects";
+import useScrollToProjects from "../../hooks/useScrollToProjects";
 
 export default function NormalNavbarOptions() {
   const scrollToProjects = useScrollToProjects();

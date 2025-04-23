@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import resume from "../../assets/resume.pdf";
-import { useScrollToProjects } from "../../hooks/useScrollToProjects";
+import useScrollToProjects from "../../hooks/useScrollToProjects";
 import { AiOutlineClose } from "react-icons/ai";
 
 type Props = {
