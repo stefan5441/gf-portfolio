@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import faceImg from "../assets/me/face.png";
-import letterLogo from "../assets/me/logo.png";
-import NormalNavbarOptions from "./NormalNavbarOptions";
+import faceImg from "../../assets/me/face.png";
+import letterLogo from "../../assets/me/logo.png";
 import MobileNavbarOptions from "./MobileNavbarOptions";
+import NormalNavbarOptions from "./NormalNavbarOptions";
 import MobileNavbarContextMenu from "./MobileNavbarContextMenu";
 
 export default function NavBar() {

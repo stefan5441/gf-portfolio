@@ -1,8 +1,7 @@
 import { useEffect } from "react";
-import { useScrollToProjects } from "./utils";
+import resume from "../../assets/resume.pdf";
+import { useScrollToProjects } from "../../hooks/useScrollToProjects";
 import { AiOutlineClose } from "react-icons/ai";
-
-import resume from "../assets/resume.pdf";
 
 type Props = {
   setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;

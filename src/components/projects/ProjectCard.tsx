@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Project } from "./projects";
 import { Link } from "react-router-dom";
+import { Project } from "../../data/projects";
 
 export default function ProjectCard({ image, frontPageVideo, title, pillText, description, year }: Project) {
   const urlFriendlyTitle = title.toLowerCase().replace(/\s+/g, "-");

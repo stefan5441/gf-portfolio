@@ -2,12 +2,12 @@ import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Footer from "./components/Footer";
-import NavBar from "./components/NavBar";
-import Projects from "./components/Work";
 import Heading from "./components/Heading";
-import ProjectPage from "./components/ProjectPage";
-import ScrollToTop from "./components/ScrollToTop";
-import FloatingNavBar from "./components/FloatingNavBar";
+import ScrollToTop from "./hooks/useScrollToTop";
+import NavBar from "./components/navigation/NavBar";
+import Projects from "./components/projects/Projects";
+import ProjectPage from "./components/projects/ProjectPage";
+import FloatingNavBar from "./components/navigation/FloatingNavBar";
 
 export default function App() {
   const [isPhone, setIsPhone] = useState(false);

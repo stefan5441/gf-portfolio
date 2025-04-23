@@ -1,6 +1,6 @@
-import { useParams } from "react-router-dom";
-import { projects } from "./projects";
 import LineThing from "./LineThing";
+import { useParams } from "react-router-dom";
+import { projects } from "../../data/projects";
 
 export default function ProjectPage() {
   const { projectTitle } = useParams();
