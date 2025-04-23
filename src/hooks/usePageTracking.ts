@@ -6,14 +6,12 @@ export default function usePageTracking() {
   const location = useLocation();
 
   useEffect(() => {
-    const trackingId = import.meta.env.VITE_GA_ID;
-    if (trackingId) {
-      ReactGA.initialize(trackingId);
-      ReactGA.send({ hitType: "pageview", page: location.pathname });
+    if (import.meta.env.MODE === "production") {
+      const trackingId = import.meta.env.VITE_GA_ID;
+      if (trackingId) {
+        ReactGA.initialize(trackingId);
+        ReactGA.send({ hitType: "pageview", page: location.pathname });
+      }
     }
   }, [location.pathname]);
-
-  useEffect(() => {
-    ReactGA.send({ hitType: "pageview", page: location.pathname });
-  }, [location]);
 }
