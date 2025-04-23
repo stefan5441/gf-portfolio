@@ -11,8 +11,6 @@ import ProjectPage from "./components/projects/ProjectPage";
 import FloatingNavBar from "./components/navigation/FloatingNavBar";
 
 export default function App() {
-  usePageTracking();
-
   const [isPhone, setIsPhone] = useState(false);
   const [isFloatingNavVisible, setIsFloatingNavVisible] = useState(false);
 
@@ -56,6 +54,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
+      <PageTracker />
       <Routes>
         <Route
           path="/"
@@ -87,4 +86,9 @@ export default function App() {
       </Routes>
     </BrowserRouter>
   );
+}
+
+function PageTracker() {
+  usePageTracking();
+  return null;
 }
