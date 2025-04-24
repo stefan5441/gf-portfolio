@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import ScrollToTop from "./hooks/useScrollToTop";
-import usePageTracking from "./hooks/usePageTracking";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Footer from "./components/Footer";
@@ -54,7 +53,6 @@ export default function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <PageTracker />
       <Routes>
         <Route
           path="/"
@@ -86,9 +84,4 @@ export default function App() {
       </Routes>
     </BrowserRouter>
   );
-}
-
-function PageTracker() {
-  usePageTracking();
-  return null;
 }
