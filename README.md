@@ -1,9 +1,9 @@
 # Portfolio for my girlfriend Sara
 
-##About
+## About
 
 Portfolio website for my girlfriend Sara, built with React, TypeScript, and Tailwind CSS
 
-##Live site
+## Live site
 
 https://sarakochovska.com/
