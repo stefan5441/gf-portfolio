@@ -1,4 +1,4 @@
-# Portfolio for my girlfriend Sara
+# Portfolio for my wife Sara
 
 ## About
 
