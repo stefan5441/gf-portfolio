@@ -2,8 +2,8 @@
 
 ## About
 
-Portfolio website for my girlfriend Sara, built with React, TypeScript, and Tailwind CSS
+Portfolio website for my wife Sara, built with React, TypeScript, and Tailwind CSS
 
 ## Live site
 
-https://sarakochovska.com/
+https://sarachambova.com/
