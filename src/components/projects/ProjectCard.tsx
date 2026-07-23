@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Project } from "../../data/projects";
 
-export default function ProjectCard({ image, frontPageVideo, title, pillText, description, year }: Project) {
+export default function ProjectCard({ image, frontPageVideo, title, pillText, description }: Project) {
   const urlFriendlyTitle = title.toLowerCase().replace(/\s+/g, "-");
 
   const randomColor = () => `hsl(${Math.floor(Math.random() * 360)}, 70%, 80%)`;
@@ -34,7 +34,6 @@ export default function ProjectCard({ image, frontPageVideo, title, pillText, de
         </div>
       </div>
       <div className="px-2 line-clamp-4">{description}</div>
-      <div className="px-2 font-bold">{year}</div>
     </Link>
   );
 }

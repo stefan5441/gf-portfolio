@@ -54,7 +54,6 @@ export type Project = {
   description: string[];
   done: string[];
   needs: string[];
-  year: number;
 };
 
 // Sunday
@@ -233,7 +232,6 @@ export const projects: Project[] = [
     description: sundayDescription,
     done: sundayDone,
     needs: sundayNeeds,
-    year: 2025,
   },
   {
     image: mebelDizajnImg,
@@ -250,7 +248,6 @@ export const projects: Project[] = [
     description: mebelDizajnDescription,
     done: mebelDizajnDone,
     needs: mebelDizajnNeeds,
-    year: 2025,
   },
   {
     image: klerImg,
@@ -267,7 +264,6 @@ export const projects: Project[] = [
     description: klerDescription,
     done: klerDone,
     needs: klerNeeds,
-    year: 2025,
   },
   {
     image: gbaImg,
@@ -284,7 +280,6 @@ export const projects: Project[] = [
     description: gbaDescription,
     done: gbaDone,
     needs: gbaNeeds,
-    year: 2025,
   },
   {
     image: branditImg,
@@ -301,7 +296,6 @@ export const projects: Project[] = [
     description: brandItDescription,
     done: brandItDone,
     needs: brandItNeeds,
-    year: 2025,
   },
   {
     image: magnoliaImg,
@@ -318,6 +312,5 @@ export const projects: Project[] = [
     description: magnoliaDescription,
     done: magnoliaDone,
     needs: magnoliaNeeds,
-    year: 2025,
   },
 ];

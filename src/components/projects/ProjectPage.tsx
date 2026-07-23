@@ -14,7 +14,7 @@ export default function ProjectPage() {
     return <div className="container mx-auto max-w-3xl py-10">Project not found</div>;
   }
 
-  const { title, showTitle, year, myRole, url, shortUrl, logo, fullPageVideo, description, done, needs, mobileImage } =
+  const { title, showTitle, myRole, url, shortUrl, logo, fullPageVideo, description, done, needs, mobileImage } =
     project;
 
   return (
@@ -27,7 +27,6 @@ export default function ProjectPage() {
 
       {/* The thing with lines */}
       <div className="flex flex-col gap-6">
-        <LineThing leftSideText="Year" rightSideText={year} />
         <LineThing leftSideText="My role" rightSideText={myRole} />
         <LineThing leftSideText="See live" rightSideText={shortUrl} href={url} />
       </div>
